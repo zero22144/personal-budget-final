@@ -52,10 +52,10 @@ class Dashboard extends Component{
   }
 
    handleSubmit=e=>{
-    fb.database().ref('messages').push(this.state.category);
-    fb.database().ref('messages').push(this.state.budget);
-    fb.database().ref('messages').push(this.state.expense);
-    fb.database().ref('messages').push(this.state.month);
+    fb.database().ref('data').push(this.state.category);
+    fb.database().ref('data').push(this.state.budget);
+    fb.database().ref('data').push(this.state.expense);
+    fb.database().ref('data').push(this.state.month);
     
     var testvar = fb.database().ref('messages').parent;
 
